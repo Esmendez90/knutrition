@@ -24,7 +24,7 @@
 
 .aboutMeparragraph,
 .signature {
-  padding: 15px;
+  padding: 15px 22px 15px 15px;
   margin: auto;
 }
 
@@ -47,7 +47,7 @@
 
 .banner {
   width: 100%;
-  height: 100px;
+  height: 135px;
   object-fit: cover;
 }
 
@@ -64,4 +64,40 @@ h4 {
     padding: 6px;
     color: grey;
     text-shadow: black 0px 0px;
+}
+
+.cardColumn {
+    box-shadow: grey 0px 0px 5px;
+}
+
+
+
+.container, .container p {
+  color: white;
+  display: block;
+  font-size: 18px;
+  font-family: "Lora", serif;
+  width: fit-content;
+}
+
+.container {
+  width: auto;
+}
+
+.igfbIcons {
+  display: inline-flex;
+  margin: 10px 0px;
+}
+
+.igfbIcons p {
+  font-size: 30px;
+  margin: -6px 0px 0px 30px;
+}
+
+.phoneEmail p {
+  margin: 10px 0px;
+}
+
+.phoneEmail p i {
+  margin-right: 10px;
 }

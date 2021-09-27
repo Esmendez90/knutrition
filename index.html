@@ -63,13 +63,15 @@
               id="navbarNavAltMarkup"
             >
               <div class="navbar-nav">
+                <a class="nav-link" href="#">Inicio</a>
                 <a
                   class="nav-link active"
                   aria-current="page"
                   href="#quienesSomos"
-                  >Sobre Nostros</a
+                  >Sobre nosotros</a
                 >
-                <a class="nav-link" href="#servicios">Servicios</a>
+                <a class="nav-link" href="#servicios">Buscar propiedades</a>
+                <a class="nav-link" href="#">Blog</a>
                 <a class="nav-link" href="#footer">Contactanos</a>
               </div>
             </div>
@@ -182,7 +184,7 @@
 
     <!-- People icon -->
     <div class="row">
-      <div class="col-sm-12 homeLogo">
+      <div id="quienesSomos" class="col-sm-12 homeLogo">
         <i class="fas fa-users"></i>
       </div>
     </div>
@@ -190,9 +192,7 @@
     <!-- About me -->
     <div class="row rowAboutMe">
       <div class="col-sm-12 colAboutMe">
-        <h1 id="quienesSomos" class="aboutMeparragraph fontFams">
-          Quienes Somos?
-        </h1>
+        <h1 class="aboutMeparragraph fontFams">Quienes Somos?</h1>
         <p class="aboutMeparragraph" style="text-align: justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
           voluptates dolorem tempore culpa. Saepe excepturi sapiente aspernatur
@@ -209,7 +209,7 @@
 
     <!-- Home icon -->
     <div class="row">
-      <div class="col-sm-12 homeLogo">
+      <div id="servicios" class="col-sm-12 homeLogo">
         <i class="fa fa-home"></i>
       </div>
     </div>
@@ -217,7 +217,7 @@
     <!-- Services -->
     <div class="row rowProjects">
       <div class="col-sm-12 cardColumn">
-        <div id="servicios" class="bannerContainer">
+        <div class="bannerContainer">
           <div class="banner1">
             <div class="b1">
               <img
@@ -263,7 +263,7 @@
 
     <!-- Contact Icon -->
     <div class="row">
-      <div class="col-sm-12 homeLogo">
+      <div id="footer" class="col-sm-12 homeLogo">
         <i class="fas fa-mobile-alt"></i>
       </div>
     </div>
@@ -271,11 +271,23 @@
     <!-- Footer -->
     <div class="row">
       <div class="col-sm-12">
-        <footer id="footer" class="py-4 bg-dark flex-bottom">
+        <footer class="py-4 bg-dark flex-bottom">
           <div class="container">
-            <p class="m-0 text-center text-white">
-              Copyright &copy; BIENES Y RAICES 2021
-            </p>
+            <div class="igfbIcons">
+              Siguenos
+
+              <p><i class="fab fa-instagram"></i></p>
+              <p><i class="fab fa-facebook"></i></p>
+            </div>
+            <div class="phoneEmail">Contactanos
+            
+              <p><i class="fas fa-phone-alt"></i> (123) 456 - 3456</p>
+              <p>
+                <i class="fas fa-envelope-open-text"></i> realestate@gmail.com
+              </p>
+            </div>
+            
+            <p class="m-0 text-center text-white" style="width:auto;">Copyright &copy; 2021</p>
           </div>
         </footer>
       </div>
