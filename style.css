@@ -2,6 +2,10 @@
   padding-right: 0px;
 }
 
+.fontFams {
+  font-family: "Lora", serif;
+}
+
 .homeLogo {
   font-size: 70px;
   margin: 20px auto;
@@ -16,11 +20,6 @@
 
 .rowAboutMe {
   background-color: lightblue;
-  margin-bottom: 30px;
-}
-
-.rowProjects {
-  margin-bottom: 30px;
 }
 
 .aboutMeparragraph,
@@ -50,4 +49,19 @@
   width: 100%;
   height: 100px;
   object-fit: cover;
+}
+
+h4 {
+  color: white;
+  text-shadow: black 2px 2px;
+}
+
+.seeDescription {
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding: 6px;
+    color: grey;
+    text-shadow: black 0px 0px;
 }
