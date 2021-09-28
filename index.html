@@ -41,10 +41,16 @@
   </head>
 
   <body>
+    <div class="sideBtns">
+      <a href="#navBarHeader" class="homeLogo"><i class="fas fa-bars"></i></a>
+      <a href="#quienesSomos" class="homeLogo"> <i class="fas fa-users"></i></a>
+      <a href="#servicios" class="homeLogo"><i class="fa fa-home"></i></a>
+      <a href="#footer" class="homeLogo"><i class="fas fa-mobile-alt"></i></a>
+    </div>
     <!-- Nav bar -->
     <div class="row">
-      <div class="col-sm-12">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="col-sm-12 navContainer">
+        <nav id="navBarHeader"class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand fontFams" href="#">BIENES Y RAICES</a>
             <button
@@ -72,7 +78,7 @@
                 >
                 <a class="nav-link" href="#servicios">Buscar propiedades</a>
                 <a class="nav-link" href="#">Blog</a>
-                <a class="nav-link" href="#footer">Contactanos</a>
+                <a class="nav-link" href="#footer">Contáctanos</a>
               </div>
             </div>
           </div>
@@ -274,20 +280,26 @@
         <footer class="py-4 bg-dark flex-bottom">
           <div class="container">
             <div class="igfbIcons">
-              Siguenos
+              Siguenos:
 
               <p><i class="fab fa-instagram"></i></p>
               <p><i class="fab fa-facebook"></i></p>
             </div>
-            <div class="phoneEmail">Contactanos
-            
+            <div class="phoneEmail">
+              Contactanos:
+
               <p><i class="fas fa-phone-alt"></i> (123) 456 - 3456</p>
               <p>
                 <i class="fas fa-envelope-open-text"></i> realestate@gmail.com
               </p>
+              <p>Direccion:</p>
+              <p style="padding-left:10px;">315 Calle 53 09018</p>
+              <p style="padding-left:10px;">Quito - Ecuador</p>
             </div>
-            
-            <p class="m-0 text-center text-white" style="width:auto;">Copyright &copy; 2021</p>
+
+            <p class="m-0 text-center text-white" style="width: auto">
+              Copyright &copy; 2021
+            </p>
           </div>
         </footer>
       </div>
