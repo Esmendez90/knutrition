@@ -138,8 +138,25 @@ h4 {
 .searchContainer {
   border-style: solid;
   border-width: thin;
+  border-radius: 10px;
   width: 85%;
   margin: 0px auto 40px;
-  border-color: grey;
+  border-color: rgb(192, 192, 192);
   padding: 25px;
+}
+
+.col-md-4 {
+  margin: 10px auto;
+}
+
+.form-check-input:checked {
+  background-color: #f16493;;
+  border-color: #f16493;;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f16493;
+  border-color: #f16493;
+  text-shadow: 1px 1px black;
 }
