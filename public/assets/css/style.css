@@ -1,0 +1,168 @@
+.col-sm-12 {
+  padding-right: 0px;
+}
+
+.navContainer {
+  height: fit-content;
+}
+
+.navContainer, .bg-light {
+  background-color: #f0f3f5 !important;
+}
+
+#navBarHeader {
+  margin: 15px auto;
+}
+
+
+.fontFams {
+  font-family: "Lora", serif;
+}
+
+.homeLogo {
+  font-size: 70px;
+  margin: 40px auto;
+  border-style: solid;
+  border-radius: 64px;
+  padding-left: 0px;
+  width: 110px;
+  text-align: center;
+  color: #f16493;
+  text-shadow: 1px 1px black;
+}
+
+.rowAboutMe {
+  background-color: #b7fbfb;;
+}
+
+.aboutMeparragraph,
+.signature {
+  padding: 15px 22px 15px 15px;
+  margin: auto;
+}
+
+.signature p {
+  font-family: "Italianno", cursive;
+  font-size: 24px;
+}
+
+.b1,
+.b2,
+.b3 {
+  position: relative;
+}
+
+.linkContainer {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.banner {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+h4 {
+  color: white;
+  text-shadow: black 2px 2px;
+}
+
+.seeDescription {
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding: 6px;
+    color: grey;
+    text-shadow: black 0px 0px;
+}
+
+.cardColumn, .rowAboutMe {
+    box-shadow: grey 0px 0px 5px;
+}
+
+
+
+.container, .container p {
+  color: white;
+  display: block;
+  font-size: 18px;
+  font-family: "Lora", serif;
+  width: fit-content;
+}
+
+.container {
+  width: auto;
+}
+
+.igfbIcons {
+  display: inline-flex;
+  margin: 10px 0px;
+}
+
+.igfbIcons p {
+  font-size: 30px;
+  margin: -6px 0px 0px 30px;
+}
+
+.phoneEmail p {
+  margin: 10px 0px;
+}
+
+.phoneEmail p i {
+  margin-right: 10px;
+}
+
+.sideBtns {
+  position: fixed;
+  bottom: 6%;
+  left: 82%;
+  width: 40px;
+  text-align: center;
+  z-index: 1;
+}
+
+.sideBtns a {
+  border-style: none;
+  font-size: 5px;
+}
+
+.sideBtns i {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #f16493;
+}
+
+.searchContainer {
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  width: 85%;
+  margin: 0px auto 40px;
+  border-color: rgb(192, 192, 192);
+  padding: 25px;
+}
+
+.col-md-4 {
+  margin: 10px auto;
+}
+
+.form-check-input:checked {
+  background-color: #f16493;;
+  border-color: #f16493;;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f16493;
+  border-color: #f16493;
+  text-shadow: 1px 1px black;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #f16493;
+  border-color: #f16493;
+}
