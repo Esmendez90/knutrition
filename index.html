@@ -223,6 +223,73 @@
       </div>
     </div>
 
+    <!-- Search box -->
+    <div class="row">
+      <div class="col-sm-12 searchContainer">
+        <form>
+          <p><strong>Buscar Propiedades</strong></p>
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="inputCity" placeholder="City" />
+          </div>
+          <div class="col-md-4">
+            <select id="inputState" class="form-select">
+              <option selected>Choose State</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <input type="text" class="form-control" id="inputZip" placeholder="Zip code" />
+          </div>
+
+          <!-- ==== -->
+
+          <fieldset class="row mb-3">
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios1"
+                  value="option1"
+                  checked
+                />
+                <label class="form-check-label" for="gridRadios1">
+                  Rentar
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="gridRadios2">
+                  Comprar
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="gridRadios2">
+                  Todos
+                </label>
+              </div>
+            </div>
+          </fieldset>
+         
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+      </div>
+    </div>
+
     <!-- Services -->
     <div class="row rowProjects">
       <div class="col-sm-12 cardColumn">
@@ -315,9 +382,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- JS -->
-    <script src="js/script.js"></script>
-
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
@@ -330,5 +394,8 @@
       src="https://kit.fontawesome.com/f33716c766.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>

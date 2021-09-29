@@ -134,3 +134,12 @@ h4 {
   margin-bottom: 10px;
   color: #f16493;
 }
+
+.searchContainer {
+  border-style: solid;
+  border-width: thin;
+  width: 85%;
+  margin: 0px auto 40px;
+  border-color: grey;
+  padding: 25px;
+}
