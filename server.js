@@ -18,6 +18,10 @@ app.use(express.static("public"));
 
 // Routes
 // =========================================================
+app.get("/tratamientos", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/views/tratamientos.html"));
+});
+
 // For some reason this route has to be after the other routes
 // otherwise the other routes won't work. Spoooky!!! =0
 app.get("*", function (req, res) {

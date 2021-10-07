@@ -16,8 +16,17 @@ $("#navBarHeader").click(function () {
   }
 });
 
+// On click go to tratamientos page
+tratamientosBtn = () => {
+// $("#tratamientos-id").click(function (event) {
+//   event.preventDefault();
+  location.href = "http://localhost:3000/tratamientos";
+//});
+}
+
+// On click scroll to section
 $(".navbar-nav").click(function (event) {
-  event.preventDefault();
+   event.preventDefault();
   let element = event.target.innerHTML;
   if (element === "Inicio") {
     scrollfunction(inicio);
@@ -30,8 +39,9 @@ $(".navbar-nav").click(function (event) {
   }
 });
 
+// On click scroll to section
 $(".sideBtns").click(function (event) {
-  event.preventDefault();
+   event.preventDefault();
   let element = event.target.className;
   console.log("class name", element);
   if (element === "fas fa-bars") {
@@ -42,9 +52,12 @@ $(".sideBtns").click(function (event) {
     scrollfunction(testimonios);
   } else if (element === "fas fa-mobile-alt") {
     scrollfunction(contactanos);
+  } else if (element === "fas fa-leaf") {
+    tratamientosBtn();
   }
 });
 
+// Function that actually scrolls to desired section
 function scrollfunction(location) {
   console.log("whaat", location);
   $("html,body").animate(
