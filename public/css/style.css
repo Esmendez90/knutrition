@@ -2,12 +2,6 @@
   padding-right: 0px;
 }
 
-/* .navContainer {
-  height: fit-content;
-  height: calc(100vh);
-  text-align: center;
-} */
-
 .navContainer,
 .bg-light {
   background-color: #f0f3f5 !important;
@@ -160,6 +154,7 @@ h4 {
 .phoneEmail p i {
   margin-right: 10px;
 }
+
 .sideBtns-Container {
   position: fixed;
   bottom: 6%;
@@ -173,12 +168,8 @@ h4 {
 }
 
 .sideBtns {
-  /* position: fixed;
-  bottom: 6%;
-  left: 82%; */
   width: 100%;
   text-align: center;
-  /* z-index: 1; */
   position: relative;
   left: 70px;
   transition: 0.2s;
