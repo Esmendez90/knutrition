@@ -1,6 +1,7 @@
 let el = document.querySelector(".navbar-toggler");
 let inicio = $("#navBarHeader").offset().top;
 let sobrenosotros = $("#sobrenosotros").offset().top;
+let tratamientos = $("#tratamientos").offset().top;
 let testimonios = $("#testimonios").offset().top;
 let contactanos = $("#contáctanos").offset().top;
 
@@ -17,9 +18,9 @@ $("#navBarHeader").click(function () {
 });
 
 // On click go to tratamientos page
-tratamientosBtn = () => {
-  location.href = "http://localhost:3000/tratamientos";
-};
+// tratamientosBtn = () => {
+//   location.href = "http://localhost:3000/tratamientos";
+// };
 
 // On click scroll to section
 $(".navbar-nav").click(function (event) {
@@ -29,6 +30,8 @@ $(".navbar-nav").click(function (event) {
     scrollfunction(inicio);
   } else if (element === "Sobre nosotros") {
     scrollfunction(sobrenosotros);
+  } else if (element === "Tratamientos") {
+    scrollfunction(tratamientos);
   } else if (element === "Testimonios") {
     scrollfunction(testimonios);
   } else if (element === "Contáctanos") {
@@ -44,6 +47,8 @@ $(".sideBtns").click(function (event) {
     scrollfunction(inicio);
   } else if (element === "fas fa-user-alt") {
     scrollfunction(sobrenosotros);
+  } else if (element === "fas fa-leaf") {
+    scrollfunction(tratamientos);
   } else if (element === "fas fa-comments") {
     scrollfunction(testimonios);
   } else if (element === "fas fa-mobile-alt") {

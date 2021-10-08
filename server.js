@@ -18,8 +18,24 @@ app.use(express.static("public"));
 
 // Routes
 // =========================================================
-app.get("/tratamientos", function (req, res) {
-  res.sendFile(path.join(__dirname, "/public/views/tratamientos.html"));
+app.get("/nutricion", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/views/nutricion.html"));
+});
+
+app.get("/cutis", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/views/cutis.html"));
+});
+
+app.get("/cuerpo", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/views/cuerpo.html"));
+});
+
+app.get("/laser", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/views/laser.html"));
+});
+
+app.get("/especiales", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/views/especiales.html"));
 });
 
 // For some reason this route has to be after the other routes
