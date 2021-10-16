@@ -2,3 +2,4 @@
 //     event.preventDefault();
 //     location.href = "http://localhost:3000/"
 // })
+console.log("hello")
