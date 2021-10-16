@@ -22,24 +22,25 @@ $("#navBarHeader").click(function () {
 //   location.href = "http://localhost:3000/tratamientos";
 // };
 
-// On click scroll to section
+// On click scroll to section (from menu)
 $(".navbar-nav").click(function (event) {
   event.preventDefault();
-  let element = event.target.innerHTML;
-  if (element === "Inicio") {
+  let element = event.target.className.split(" ").join("-").toLowerCase();
+  console.log(element);
+  if (element === "nav-link-inicio") {
     scrollfunction(inicio);
-  } else if (element === "Sobre nosotros") {
+  } else if (element === "nav-link-sobre-nosotros") {
     scrollfunction(sobrenosotros);
-  } else if (element === "Tratamientos") {
+  } else if (element === "nav-link-tratamientos") {
     scrollfunction(tratamientos);
-  } else if (element === "Testimonios") {
+  } else if (element === "nav-link-testimonios") {
     scrollfunction(testimonios);
-  } else if (element === "Contáctanos") {
+  } else if (element === "nav-link-contactanos") {
     scrollfunction(contactanos);
   }
 });
 
-// On click scroll to section
+// On click scroll to section (side btns)
 $(".sideBtns").click(function (event) {
   event.preventDefault();
   let element = event.target.className;
@@ -60,6 +61,8 @@ $(".sideBtns").click(function (event) {
 
 // Function that actually scrolls to desired section
 function scrollfunction(location) {
+  console.log("hello location", location);
+  
   $("html,body").animate(
     {
       scrollTop: location,
