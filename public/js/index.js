@@ -5,9 +5,9 @@ let tratamientos = $("#tratamientos").offset().top;
 let testimonios = $("#testimonios").offset().top;
 let contactanos = $("#contáctanos").offset().top;
 
-$(".navbar-collapse a").click(function () {
-  $(".navbar-collapse").collapse("hide");
-});
+// $(".navbar-collapse a").click(function () {
+//   $(".navbar-collapse").collapse("hide");
+// });
 
 $("#navBarHeader").click(function () {
   if (el.ariaExpanded === "true") {
@@ -26,7 +26,7 @@ $("#navBarHeader").click(function () {
 $(".navbar-nav").click(function (event) {
   event.preventDefault();
   let element = event.target.className.split(" ").join("-").toLowerCase();
-  console.log(element);
+
   if (element === "nav-link-inicio") {
     scrollfunction(inicio);
   } else if (element === "nav-link-sobre-nosotros") {
@@ -38,6 +38,10 @@ $(".navbar-nav").click(function (event) {
   } else if (element === "nav-link-contactanos") {
     scrollfunction(contactanos);
   }
+  // else if (element === "fas-fa-chevron-down") {
+  //  console.log(element);
+  //   //tratamientosDropdown();
+  // }
 });
 
 // On click scroll to section (side btns)
@@ -62,7 +66,8 @@ $(".sideBtns").click(function (event) {
 // Function that actually scrolls to desired section
 function scrollfunction(location) {
   console.log("hello location", location);
-  
+  $(".navbar-collapse").collapse("hide");
+
   $("html,body").animate(
     {
       scrollTop: location,
@@ -70,3 +75,16 @@ function scrollfunction(location) {
     "fast"
   );
 }
+
+$("#arrowList").click(function () {
+  this.classList.toggle("active");
+  let tratamientosList = document.getElementById("list-tratamientos");
+
+  if (tratamientosList.style.display === "none") {
+    tratamientosList.style.display = "block";
+    $(".fa-chevron-down").css("transform", "rotate(180deg)");
+  } else {
+    tratamientosList.style.display = "none";
+    $(".fa-chevron-down").css("transform", "rotate(0deg)");
+  }
+});
