@@ -75,14 +75,6 @@ body {
 }
 
 .logo {
-  font-size: 70px;
-  margin: 60px auto;
-  border-style: solid;
-  border-radius: 64px;
-  padding-left: 0px;
-  width: 110px;
-  text-align: center;
-  color: #a97bb1;
   text-shadow: 1px 1px black;
 }
 
@@ -93,12 +85,13 @@ body {
   background-color: #a97bb1;
 }
 
-.leaf-comments-logos {
+.leaf-comments-logos, .cellphone-logo {
   width: fit-content;
   margin: 0px auto 20px;
+  text-align: center;
 }
 
-.leaf-comments-logos p {
+.leaf-comments-logos p, .cellphone-logo {
   font-size: 32px;
   font-family: "lora", serif;
   color: white;
@@ -106,11 +99,21 @@ body {
   text-shadow: 1px 1px black;
 }
 
-.leaf-comments-logos i {
+.leaf-comments-logos i, .cellphone-logo i {
   border-style: solid;
   border-radius: 30px;
   width: 54px;
   padding: 7px;
+}
+
+.cellphone-logo {
+  font-size: 58px;
+}
+
+.cellphone-logo i {
+  border-radius: 39px;
+  width: 80px;
+  color: #a97bb1;
 }
 
 .rowAboutMe {
@@ -205,6 +208,10 @@ h4 {
   box-shadow: grey 0px 0px 5px;
 }
 
+.rowProjects {
+  margin-bottom: 60px;
+}
+
 .container,
 .container p {
   color: white;
@@ -277,6 +284,4 @@ h4 {
   color: #a97bb1;
 }
 
-.rowComments {
-  margin-bottom: 60px;
-}
+

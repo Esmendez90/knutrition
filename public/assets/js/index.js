@@ -10,8 +10,10 @@ let contactanos = $("#contáctanos").offset().top;
 $("#navBarHeader").click(function () {
   if (el.ariaExpanded === "true") {
     $("main").css("display", "none");
+    $(".rowContact").css("display", "none");
   } else {
     $("main").css("display", "block");
+    $(".rowContact").css("display", "block");
   }
 });
 
@@ -68,9 +70,9 @@ function scrollfunction(location) {
 $("#arrowList").click(function (event) {
   event.preventDefault();
   this.classList.toggle("active");
- // console.log(this);
+  // console.log(this);
   let tratamientosList = document.getElementById("list-tratamientos");
- // console.log(tratamientosList);
+  // console.log(tratamientosList);
   if (tratamientosList.style.display === "none") {
     tratamientosList.style.display = "block";
     $(".fa-chevron-down").css("transform", "rotate(180deg)");
