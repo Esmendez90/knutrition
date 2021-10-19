@@ -89,7 +89,6 @@ body {
 .leaflogo-container {
   width: 100%;
   height: 90px;
-  margin-top: 60px;
   padding-right: 0px;
   background-color: #a97bb1;
 }
@@ -115,6 +114,7 @@ body {
 }
 
 .rowAboutMe {
+  margin-bottom: 60px;
   background-color: #ecdcef;
   background-image: linear-gradient(
     to bottom,
