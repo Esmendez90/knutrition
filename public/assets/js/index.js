@@ -1,3 +1,5 @@
+console.log("I'm index.js. Ready and loaded!");
+
 let el = document.querySelector(".navbar-toggler");
 let inicio = $("#navBarHeader").offset().top;
 let sobrenosotros = $("#sobrenosotros").offset().top;
@@ -12,11 +14,6 @@ $("#navBarHeader").click(function () {
     $("main").css("display", "block");
   }
 });
-
-// On click go to tratamientos page
-// tratamientosBtn = () => {
-//   location.href = "http://localhost:3000/tratamientos";
-// };
 
 // On click scroll to section (from menu)
 $(".navbar-nav").click(function (event) {
@@ -71,9 +68,9 @@ function scrollfunction(location) {
 $("#arrowList").click(function (event) {
   event.preventDefault();
   this.classList.toggle("active");
-  console.log(this);
+ // console.log(this);
   let tratamientosList = document.getElementById("list-tratamientos");
-  console.log(tratamientosList);
+ // console.log(tratamientosList);
   if (tratamientosList.style.display === "none") {
     tratamientosList.style.display = "block";
     $(".fa-chevron-down").css("transform", "rotate(180deg)");
