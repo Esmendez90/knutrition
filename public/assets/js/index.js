@@ -5,10 +5,6 @@ let tratamientos = $("#tratamientos").offset().top;
 let testimonios = $("#testimonios").offset().top;
 let contactanos = $("#contáctanos").offset().top;
 
-// $(".navbar-collapse a").click(function () {
-//   $(".navbar-collapse").collapse("hide");
-// });
-
 $("#navBarHeader").click(function () {
   if (el.ariaExpanded === "true") {
     $("main").css("display", "none");
@@ -38,10 +34,6 @@ $(".navbar-nav").click(function (event) {
   } else if (element === "nav-link-contactanos") {
     scrollfunction(contactanos);
   }
-  // else if (element === "fas-fa-chevron-down") {
-  //  console.log(element);
-  //   //tratamientosDropdown();
-  // }
 });
 
 // On click scroll to section (side btns)
@@ -65,7 +57,6 @@ $(".sideBtns").click(function (event) {
 
 // Function that actually scrolls to desired section
 function scrollfunction(location) {
-  console.log("hello location", location);
   $(".navbar-collapse").collapse("hide");
 
   $("html,body").animate(
@@ -76,10 +67,13 @@ function scrollfunction(location) {
   );
 }
 
-$("#arrowList").click(function () {
+// handles toggle - arrow for Tratamientos menu
+$("#arrowList").click(function (event) {
+  event.preventDefault();
   this.classList.toggle("active");
+  console.log(this);
   let tratamientosList = document.getElementById("list-tratamientos");
-
+  console.log(tratamientosList);
   if (tratamientosList.style.display === "none") {
     tratamientosList.style.display = "block";
     $(".fa-chevron-down").css("transform", "rotate(180deg)");
@@ -88,3 +82,23 @@ $("#arrowList").click(function () {
     $(".fa-chevron-down").css("transform", "rotate(0deg)");
   }
 });
+
+$("#list-tratamientos").click(function (event) {
+  event.preventDefault();
+  let element = event.target.innerHTML.toLowerCase();
+  console.log(element);
+  if (
+    element === "nutricion" ||
+    element === "cutis" ||
+    element === "cuerpo" ||
+    element === "laser" ||
+    element === "especiales"
+  ) {
+    renderPage(element);
+  }
+});
+
+renderPage = (routeName) => {
+  console.log(routeName);
+  location.href = `http://localhost:3000/${routeName}`;
+};

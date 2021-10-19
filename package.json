@@ -20,6 +20,6 @@
   "homepage": "https://github.com/Esmendez90/realestate#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "path-posix": "^1.0.0"
+    "express-handlebars": "^5.3.4"
   }
 }

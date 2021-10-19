@@ -1,48 +1,26 @@
 // Dependencies
 // =============================================================
-var express = require("express");
-var path = require("path-posix");
+const express = require("express");
+const exphbs = require("express-handlebars");
+// Import routes and give the server access to them.
+const routes = require("./controllers/knutricionControllers");
 
+// process.env.PORT is for heroku
+const PORT = process.env.PORT || 3000;
 
-// Sets up the Express App
-// =============================================================
-var app = express();
-var PORT = 3000;
+const app = express();
 
-// Sets up the Express app to handle data parsing
-// Middleware route
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 // this line allows the server to look for and use the public directory
 app.use(express.static("public"));
 
-// Routes
-// =========================================================
-app.get("/nutricion", function (req, res) {
-  res.sendFile(path.join(__dirname, "/public/views/nutricion.html"));
-});
+// Parse request body as JSON
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-app.get("/cutis", function (req, res) {
-  res.sendFile(path.join(__dirname, "/public/views/cutis.html"));
-});
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
-app.get("/cuerpo", function (req, res) {
-  res.sendFile(path.join(__dirname, "/public/views/cuerpo.html"));
-});
-
-app.get("/laser", function (req, res) {
-  res.sendFile(path.join(__dirname, "/public/views/laser.html"));
-});
-
-app.get("/especiales", function (req, res) {
-  res.sendFile(path.join(__dirname, "/public/views/especiales.html"));
-});
-
-// For some reason this route has to be after the other routes
-// otherwise the other routes won't work. Spoooky!!! =0
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "/public/views/index.html"));
-});
+app.use(routes);
 
 // Starts the server to begin listening
 // =============================================================

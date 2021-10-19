@@ -41,10 +41,11 @@ body {
 
 .fa-chevron-down {
   width: 30px;
+  transition: 0.4s;
 }
 
 .fa-chevron-down:hover {
-  color: rgb(163, 115, 190);
+  color: #a97bb1;
 }
 
 .container-fluid {
