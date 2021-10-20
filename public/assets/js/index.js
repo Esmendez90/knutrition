@@ -111,7 +111,7 @@ renderPage = (routeName) => {
 $("#list-tratamientos").click(function (event) {
   event.preventDefault();
   let element = event.target.innerHTML.toLowerCase();
- // console.log(element);
+ console.log(element);
   tratamientosMenu.filter((tratamiento) => {
     if (element === tratamiento) {
       renderPage(element);
