@@ -27,7 +27,7 @@ body {
 
 .tratamientosList {
   display: none;
-  padding-left: 10rem;
+  padding-left: 9rem;
   text-align: left;
 }
 
@@ -65,10 +65,10 @@ body {
   text-align: center;
   font-size: 25px;
 }
-/* 
-.nav-link {
-  transform: translate(0px, 0px);
-} */
+
+.navbar-nav li {
+  margin: 2.5% auto;
+}
 
 .background_img_container {
   margin-bottom: -6px;

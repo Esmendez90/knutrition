@@ -1,11 +1,40 @@
-console.log("I'm index.js. Ready and loaded!");
-
 let el = document.querySelector(".navbar-toggler");
-let inicio = $("#navBarHeader").offset().top;
-let sobrenosotros = $("#sobrenosotros").offset().top;
-let tratamientos = $("#tratamientos").offset().top;
-let testimonios = $("#testimonios").offset().top;
-let contactanos = $("#contáctanos").offset().top;
+let inicio = document.getElementById("navBarHeader");
+let sobrenosotros = document.getElementById("sobrenosotros");
+let tratamientos = document.getElementById("tratamientos");
+let testimonios = document.getElementById("testimonios");
+let contactanos = document.getElementById("contactanos");
+let locationArr;
+
+window.onload = function () {
+  if (sobrenosotros) {
+    locationArr = [
+      {
+        varname: "inicio",
+        locationOnPage: $("#navBarHeader").offset().top,
+      },
+      {
+        varname: "sobrenosotros",
+        locationOnPage: $("#sobrenosotros").offset().top,
+      },
+      {
+        varname: "tratamientos",
+        locationOnPage: $("#tratamientos").offset().top,
+      },
+      {
+        varname: "testimonios",
+        locationOnPage: $("#testimonios").offset().top,
+      },
+      {
+        varname: "contactanos",
+        locationOnPage: $("#contactanos").offset().top,
+      },
+    ];
+    //console.log(locationArr);
+  } else {
+    console.log("Id does not exist on this page!");
+  }
+};
 
 $("#navBarHeader").click(function () {
   if (el.ariaExpanded === "true") {
@@ -20,44 +49,31 @@ $("#navBarHeader").click(function () {
 // On click scroll to section (from menu)
 $(".navbar-nav").click(function (event) {
   event.preventDefault();
-  let element = event.target.className.split(" ").join("-").toLowerCase();
-
-  if (element === "nav-link-inicio") {
-    scrollfunction(inicio);
-  } else if (element === "nav-link-sobre-nosotros") {
-    scrollfunction(sobrenosotros);
-  } else if (element === "nav-link-tratamientos") {
-    scrollfunction(tratamientos);
-  } else if (element === "nav-link-testimonios") {
-    scrollfunction(testimonios);
-  } else if (element === "nav-link-contactanos") {
-    scrollfunction(contactanos);
-  }
+  let element = event.target.className.split(" ")[1];
+  console.log(element);
+  locationArr.filter((obj) => {
+    element === obj.varname
+      ? scrollfunction(obj.locationOnPage)
+      : console.log();
+  });
 });
 
 // On click scroll to section (side btns)
 $(".sideBtns").click(function (event) {
   event.preventDefault();
-  let element = event.target.className;
-  if (element === "fas fa-bars") {
-    scrollfunction(inicio);
-  } else if (element === "fas fa-user-alt") {
-    scrollfunction(sobrenosotros);
-  } else if (element === "fas fa-leaf") {
-    scrollfunction(tratamientos);
-  } else if (element === "fas fa-comments") {
-    scrollfunction(testimonios);
-  } else if (element === "fas fa-mobile-alt") {
-    scrollfunction(contactanos);
-  } else if (element === "fas fa-leaf") {
-    tratamientosBtn();
-  }
+  let element = event.target.className.split(" ")[2];
+  //console.log(element);
+  locationArr.filter((obj) => {
+    element === obj.varname
+      ? scrollfunction(obj.locationOnPage)
+      : console.log();
+  });
 });
 
 // Function that actually scrolls to desired section
 function scrollfunction(location) {
+  //console.log(location);
   $(".navbar-collapse").collapse("hide");
-
   $("html,body").animate(
     {
       scrollTop: location,
@@ -70,16 +86,12 @@ function scrollfunction(location) {
 $("#arrowList").click(function (event) {
   event.preventDefault();
   this.classList.toggle("active");
-  // console.log(this);
   let tratamientosList = document.getElementById("list-tratamientos");
-  // console.log(tratamientosList);
-  if (tratamientosList.style.display === "none") {
-    tratamientosList.style.display = "block";
-    $(".fa-chevron-down").css("transform", "rotate(180deg)");
-  } else {
-    tratamientosList.style.display = "none";
-    $(".fa-chevron-down").css("transform", "rotate(0deg)");
-  }
+  tratamientosList.style.display === "none"
+    ? ((tratamientosList.style.display = "block"),
+      $(".fa-chevron-down").css("transform", "rotate(180deg)"))
+    : ((tratamientosList.style.display = "none"),
+      $(".fa-chevron-down").css("transform", "rotate(0deg)"));
 });
 
 $("#list-tratamientos").click(function (event) {
