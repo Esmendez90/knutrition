@@ -4,6 +4,10 @@ const router = express.Router();
 
 // Routes
 // =========================================================
+router.get("/", function (req, res) {
+  res.render("index");
+});
+
 router.get("/nutricion", function (req, res) {
   res.render("nutricion");
 });
@@ -26,9 +30,9 @@ router.get("/especiales", function (req, res) {
 
 // For some reason this route has to be after the other routes
 // otherwise the other routes won't work. Spoooky!!! =0
-router.get("*", function (req, res) {
-    res.render("index");
-});
+// router.get("/", function (req, res) {
+//     res.render("index");
+// });
 
 // Export routes for server.js to use.
 module.exports = router;
