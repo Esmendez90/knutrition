@@ -25,6 +25,13 @@ body {
   border-color: #a97bb1;
 }
 
+.navbar-brand {
+  font-size: 26px;
+  background: -webkit-linear-gradient(#a97bb1, #55245f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .tratamientosList {
   display: none;
   padding-left: 9rem;
@@ -33,7 +40,8 @@ body {
 
 .tratamientosList li {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
+  color: grey;
 }
 .tratamientosList li:hover {
   text-decoration: underline;
@@ -45,7 +53,7 @@ body {
 }
 
 .fa-chevron-down:hover {
-  color: #a97bb1;
+  color: #86538f;
 }
 
 .container-fluid {
@@ -85,13 +93,15 @@ body {
   background-color: #a97bb1;
 }
 
-.leaf-comments-logos, .cellphone-logo {
+.leaf-comments-logos,
+.cellphone-logo {
   width: fit-content;
   margin: 0px auto 20px;
   text-align: center;
 }
 
-.leaf-comments-logos p, .cellphone-logo {
+.leaf-comments-logos p,
+.cellphone-logo {
   font-size: 32px;
   font-family: "lora", serif;
   color: white;
@@ -99,7 +109,8 @@ body {
   text-shadow: 1px 1px black;
 }
 
-.leaf-comments-logos i, .cellphone-logo i {
+.leaf-comments-logos i,
+.cellphone-logo i {
   border-style: solid;
   border-radius: 30px;
   width: 54px;
@@ -195,6 +206,9 @@ h4 {
 }
 
 .seeDescription {
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
   background-color: white;
   border-style: solid;
   border-width: thin;
@@ -283,5 +297,3 @@ h4 {
   margin-bottom: 10px;
   color: #a97bb1;
 }
-
-
