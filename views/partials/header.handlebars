@@ -7,17 +7,20 @@
     >
       <div class="container-fluid">
         <a class="navbar-brand fontFams animate__animated animate__flipInX" href="#">K Nutrición</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="twoBtns">
+          {{>englishBtn}}
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+           >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse fontFams" id="navbarNavAltMarkup">
           <ul class="navbar-nav">
             <li class="nav-link inicio animate__animated animate__fadeInDown">Inicio</li>
