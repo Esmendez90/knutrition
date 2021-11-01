@@ -20,9 +20,29 @@ body {
   margin: 15px auto;
 }
 
+.twoBtns {
+  display: flex;
+}
+
+.english-btn {
+  /* padding: 0.25rem 0.75rem; */
+  margin-right: 5px;
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: rgba(0, 0, 0, 0.564);
+  border-color: #a97bb1;
+}
+
 .navbar-light .navbar-toggler {
   color: #a97bb1;
   border-color: #a97bb1;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 17px;
 }
 
 .navbar-brand {
@@ -64,6 +84,9 @@ body {
   width: 100%;
 }
 
+#sobrenosotros h1 {
+  font-family: "EB Garamond", serif;
+}
 .fontFams {
   font-family: "Lora", serif;
 }
@@ -128,15 +151,8 @@ body {
 }
 
 .rowAboutMe {
-  margin-bottom: 60px;
-  background-color: #ecdcef;
-  background-image: linear-gradient(
-    to bottom,
-    #ecdcef,
-    #e0c6e4,
-    #cfadd4,
-    #b696bd
-  );
+  margin-bottom: 10px;
+  background-color: #a97bb1;
 }
 
 .colAboutMe p {
@@ -163,6 +179,7 @@ h1 {
 
 .aboutMeparragraph,
 .signature {
+  font-family: 'EB Garamond', serif;
   padding: 15px 30px;
   margin: auto;
 }
@@ -223,7 +240,7 @@ h4 {
 }
 
 .rowProjects {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .container,

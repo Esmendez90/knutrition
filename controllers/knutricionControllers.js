@@ -4,6 +4,7 @@ const router = express.Router();
 
 // Routes
 // =========================================================
+
 router.get("/nutricion", function (req, res) {
   res.render("nutricion");
 });
@@ -25,7 +26,7 @@ router.get("/especiales", function (req, res) {
 });
 
 // For some reason this route has to be after the other routes
-// otherwise the other routes won't work. Spoooky!!! =0
+// otherwise the other routes won't work. Spoooky!!! 
 router.get("*", function (req, res) {
     res.render("index");
 });
