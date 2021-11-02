@@ -41,7 +41,7 @@ window.onload = () =>
     : goToHome();
 
 exists = () => {
- // console.log("si existo wey!");
+ // console.log("si existo!");
   $(".navbar-nav").click(function (event) {
     event.preventDefault();
     let element = event.target.className.split(" ")[1];
@@ -101,7 +101,7 @@ downArrowMenu = () => {
       $(".fa-chevron-down").css("transform", "rotate(0deg)"));
 };
 
-// Renders tratamiento page
+// Renders tratamientos routes
 renderPage = (routeName) => {
  // console.log(routeName);
   location.href = `http://localhost:3000/${routeName}`;
