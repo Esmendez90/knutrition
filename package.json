@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Esmendez90/realestate.git"
+    "url": "git+https://github.com/Esmendez90/knutrition.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Esmendez90/realestate/issues"
+    "url": "https://github.com/Esmendez90/knutrition/issues"
   },
-  "homepage": "https://github.com/Esmendez90/realestate#readme",
+  "homepage": "https://github.com/Esmendez90/knutrition#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4"
