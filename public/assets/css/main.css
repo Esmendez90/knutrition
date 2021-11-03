@@ -276,7 +276,7 @@ h4 {
 
 .sideBtns-Container {
   position: fixed;
-  bottom: 6%;
+  bottom: 20%;
   left: 98%;
   z-index: 1;
   width: 49px;
@@ -310,8 +310,8 @@ h4 {
 }
 
 .sideBtns i {
-  font-size: 25px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  margin: 0px auto 14px;
   color: #a97bb1;
 }
 
