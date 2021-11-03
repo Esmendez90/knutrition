@@ -104,7 +104,7 @@ downArrowMenu = () => {
 // Renders tratamientos routes
 renderPage = (routeName) => {
  // console.log(routeName);
-  location.href = `http://localhost:3000/${routeName}`;
+   location.href = window.location.href + routeName;
 };
 
 // On click event to direct to a tratamiento page
