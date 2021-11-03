@@ -81,7 +81,7 @@ goToHome = () => {
     //console.log(element);
     locationArr.filter((obj) => {
       if (element === obj) {
-        location.href = `http://localhost:3000/#${element}`;
+        location.href = window.location.origin + "/#" + element;
       } else if (element === "fa-chevron-down") {
         downArrowMenu();
       } else {
@@ -104,7 +104,7 @@ downArrowMenu = () => {
 // Renders tratamientos routes
 renderPage = (routeName) => {
  // console.log(routeName);
-   location.href = window.location.href + routeName;
+   location.href = window.location.origin + "/" + routeName;
 };
 
 // On click event to direct to a tratamiento page
