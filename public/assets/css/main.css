@@ -46,7 +46,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: 26px;
+  font-size: 30px;
   background: -webkit-linear-gradient(#a97bb1, #55245f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -179,15 +179,19 @@ h1 {
 
 .aboutMeparragraph,
 .signature {
+  color: white;
+  text-shadow: 1px 0.5px black;
   font-family: "EB Garamond", serif;
+  font-weight: bold;
   padding: 15px 30px;
   margin: auto;
 }
 
 .signature p {
   font-family: "Italianno", cursive;
-  font-size: 24px;
+  font-size: 30px;
   text-align: right;
+  margin: auto;
 }
 
 .b1,
@@ -200,7 +204,7 @@ h1 {
 
 .linkContainer {
   position: absolute;
-  top: 25px;
+  top: 50px;
   left: 20px;
 }
 
@@ -218,6 +222,7 @@ h1 {
 }
 
 h4 {
+  margin-top: 5px;
   color: white;
   text-shadow: black 2px 2px;
 }
@@ -229,7 +234,7 @@ h4 {
   background-color: #a97bb1;
   border-style: solid;
   border-radius: 5px;
-  border-color: #212529;
+  border-color: #845b8b;
   padding: 5px auto;
   color: white;
   text-shadow: black 1px 1px;
