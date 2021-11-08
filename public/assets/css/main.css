@@ -213,6 +213,11 @@ h1 {
 .banner3,
 .banner4 {
   margin-bottom: 2px;
+  padding-right: 0px;
+}
+
+.banner5 {
+  padding-right: 0px;
 }
 
 .banner {
@@ -336,4 +341,66 @@ h4 {
 
 .accordion {
   margin-top: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-nav {
+    font-size: 38px;
+  }
+
+  .navbar-toggler, .english-btn {
+    height: 50px;
+    width: 75px;
+    font-size: 25px;
+  }
+
+  .navbar-brand {
+    font-size: 45px;
+  }
+
+  .tratamientosList li {
+    font-size: 27px;
+    text-align: center;
+  }
+  .seeDescription {
+    width: 230px;
+    height: 45px;
+    font-size: 23px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  .container,
+  .container p {
+    font-size: 30px;
+  }
+  .igfbIcons i {
+    font-size: 50px;
+  }
+
+  .sideBtns i {
+    font-size: 49px;
+  }
+
+  .sideBtns-Container {
+    width: 84px;
+  }
+
+  .sideBtns-Container:hover {
+    left: 89%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-nav {
+    font-size: 21px;
+    margin: 15px auto 0px;
+}
+.english-btn {
+  display: none;
+}
+
+.sideBtns-Container {
+  display: none;
+}
 }
