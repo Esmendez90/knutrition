@@ -368,6 +368,11 @@ h4 {
     height: 45px;
     font-size: 23px;
   }
+
+  .banner {
+    height: 240px;
+  }
+
   h4 {
     font-size: 30px;
   }
